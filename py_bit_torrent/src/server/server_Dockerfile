@@ -1,12 +1,17 @@
-﻿FROM python:3.9-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY server.py archivo.torrent /app/
-COPY entrypoint.sh /app/
+COPY ./../../../ /app
 
-RUN apt-get update && apt-get install -y net-tools iproute2 && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl net-tools iproute2 iputils-ping && rm -rf /var/lib/apt/lists/*
 
-RUN chmod +x /app/entrypoint.sh
+RUN curl -sSL https://install.python-poetry.org | python3 -
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENV PATH="/root/.local/bin:$PATH"
+
+RUN poetry install --no-root
+
+RUN chmod +x /app/py_bit_torrent/src/server/entrypoint.sh
+
+ENTRYPOINT ["/app/py_bit_torrent/src/server/entrypoint.sh"]
