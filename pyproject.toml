@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "bit-torrent"
+name = "py-bit-torrent"
 version = "0.1.0"
-description = "A simple bit torrent client"
+description = "A simple bit torrent client writtent in python"
 authors = ["Rafael Acosta <theGitNoob@gmail.com>"]
 readme = "README.md"
 
