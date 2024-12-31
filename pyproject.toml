@@ -2,11 +2,19 @@
 name = "py-bit-torrent"
 version = "0.1.0"
 description = "A simple bit torrent client writtent in python"
-authors = ["Rafael Acosta <theGitNoob@gmail.com>"]
+authors = ["Rafael Acosta <theGitNoob@gmail.com>", "Eisler F. Valles Rodríguez <mail@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.14"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.1"
+httpx = "^0.28.0"
+pyside6 = "6.8.1"
+typer = "^0.15.1"
+bencodepy = "^0.9.5"
+beautifultable = "^1.1.0"
+requests = "^2.32.3"
 
 
 [tool.poetry.group.dev.dependencies]
