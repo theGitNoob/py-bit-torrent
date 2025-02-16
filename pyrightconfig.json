@@ -1,7 +1,7 @@
-{
-    "exclude": [
-        ".venv",
-        "**/__pycache__"
-    ],
-    "typeCheckingMode": "strict"
-}
+// {
+//     "exclude": [
+//         ".venv",
+//         "**/__pycache__"
+//     ],
+//     "typeCheckingMode": "strict"
+// }

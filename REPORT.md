@@ -2,7 +2,8 @@
 
 ## Resumen Ejecutivo
 
-Este informe presenta un análisis detallado de nuestra implementación del protocolo BitTorrent en Python, incluyendo la extensión DHT (Distributed Hash Table). La implementación representa un sistema completamente funcional que combina la robustez del protocolo BitTorrent tradicional con la descentralización que proporciona DHT, eliminando la dependencia de trackers centralizados.
+Este informe presenta un análisis detallado de nuestra implementación del protocolo BitTorrent en Python, incluyendo la extensión DHT (Distributed Hash Table). La implementación representa un sistema completamente funcional que combina la robustez del protocolo BitTorrent tradicional con la descentralización que proporciona DHT, eliminando la dependencia de trackers centralizados. 
+Además, el cliente ahora contacta directamente a nodos DHT para obtener la lista de pares, en lugar de recurrir a trackers.
 
 ## 1. Arquitectura del Sistema
 
