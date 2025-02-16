@@ -1,0 +1,9 @@
+FROM base:latest
+
+WORKDIR /app
+
+COPY ./ /app
+
+RUN chmod +x /app/py_bit_torrent/src/server/entrypoint.sh
+
+ENTRYPOINT ["/app/py_bit_torrent/src/server/entrypoint.sh"]
